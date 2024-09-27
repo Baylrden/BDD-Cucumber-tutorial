@@ -27,7 +27,7 @@ public class TestOtomasyonPage {
     @FindBy(id = "global-search")
     public WebElement aramakutusu;
 
-    @FindBy(xpath = "(//img[@src='https://testotomasyonu.com/frontend/images/account.png'])[1]")
+    @FindBy(xpath = "(//*[@class='menu-icon-text'])[1]")
     public WebElement accountIcon;
 
     @FindBy(id = "email")
@@ -59,5 +59,8 @@ public class TestOtomasyonPage {
 
     @FindBy(xpath = "//*[@class='notfoundtxt mt-5']")
     public WebElement notFoundLabel;
+
+    @FindBy(xpath = "(//*[@class='item'])[6]")
+    public WebElement logoutButton;
 
 }

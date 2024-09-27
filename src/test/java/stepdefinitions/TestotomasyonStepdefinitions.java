@@ -64,4 +64,31 @@ public class TestotomasyonStepdefinitions {
     public void saniyeBekler(int saniye) {
         ReusableMethods.bekle(saniye);
     }
+
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullanici_anasayfaya_gider(String urlFromConfig) {
+        Driver.getDriver().get(ConfigReader.getProperty(urlFromConfig));
+    }
+    @Then("account buttonuna basar")
+    public void account_buttonuna_basar() {
+        testOtomasyonPage.accountIcon.click();
+    }
+    @Then("email olarak {string} girer")
+    public void email_olarak_girer(String emailFromConfig) {
+        testOtomasyonPage.emailKutusu.sendKeys(ConfigReader.getProperty(emailFromConfig));
+    }
+    @Then("signIn buttonuna basar")
+    public void sign_in_buttonuna_basar() {
+        testOtomasyonPage.loginButonu.click();
+    }
+    @Then("basarili giris yapabildigini test eder")
+    public void basarili_giris_yapabildigini_test_eder() {
+        Assert.assertTrue(testOtomasyonPage.logoutButton.isDisplayed());
+    }
+
+    @And("password olarak {string} girer")
+    public void passwordOlarakGirer(String passFromConfig) {
+        testOtomasyonPage.passwordKutusu.sendKeys(ConfigReader.getProperty(passFromConfig));
+    }
 }
