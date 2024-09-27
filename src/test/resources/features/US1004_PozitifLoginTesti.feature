@@ -1,6 +1,6 @@
 Feature: US 10004 Kullanici gecerli bilgilerle login olabilmeli
 
-  @wip
+
   Scenario: TC10 valid username and password
     Given kullanici "toUrl" anasayfaya gider
     Then account buttonuna basar

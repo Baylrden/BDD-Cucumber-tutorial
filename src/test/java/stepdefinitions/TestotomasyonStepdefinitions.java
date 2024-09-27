@@ -91,4 +91,9 @@ public class TestotomasyonStepdefinitions {
     public void passwordOlarakGirer(String passFromConfig) {
         testOtomasyonPage.passwordKutusu.sendKeys(ConfigReader.getProperty(passFromConfig));
     }
+
+    @Then("basarili giris yapilamadigini test eder")
+    public void basarili_giris_yapilamadigini_test_eder() {
+        Assert.assertTrue(testOtomasyonPage.loginButonu.isDisplayed());
+    }
 }
