@@ -1,6 +1,6 @@
 Feature: US1011 Excel olarak verilen listedeki urunler aratilir
 
-  @wip
+  #toBeContinued
   Scenario Outline: TC19 excelden sececegimiz satirdaki urunlerin min urun sayisi test edilir
 
     Given kullanici "toUrl" anasayfaya gider
