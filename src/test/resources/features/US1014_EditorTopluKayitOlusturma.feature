@@ -1,6 +1,6 @@
 Feature: US1014 Kullanici tablo olarak verilen degerlerle kayit olusturur
 
-  @wip
+
  Scenario Outline: TC22 Tablo olarak verilen bilgilerlekayit olusturulabilmeli
    When kullanici "editorUrl" anasayfaya gider
    And 3 saniye bekler
@@ -17,6 +17,6 @@ Feature: US1014 Kullanici tablo olarak verilen degerlerle kayit olusturur
    And sayfayi kapatir
 
    Examples:
-   |firstname|lastname|position|office|extension|startdate|salary  |
+   |firstname|lastname|position|office|extension|startdate |salary |
    |john     |roark   |qa      |Baku  |-        |2024-12-12|3000   |
-   |jane     |doe     |qa      |Guba|-    |2024-12-12|4000         |
+   |jane     |doe     |qa      |Guba  |-        |2024-12-12|4000   |
