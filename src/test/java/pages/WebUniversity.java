@@ -10,7 +10,7 @@ public class WebUniversity {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[text()='LOGIN PORTAL']")
+    @FindBy(xpath = "//*[@id='login-portal']")
     public WebElement loginPortal;
 
     @FindBy(id = "text")
