@@ -1,6 +1,6 @@
 Feature: US1016 Webuni sayfasinda invalid bilgilerle giris yapilamamalidir
 
-  @wip
+
   Scenario: TC23 yanlis bilgilerle girir yapilamadigi test edilir
     Given kullanici "webUniUrl" anasayfaya gider
     And Login portal a kadar asagi iner

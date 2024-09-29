@@ -52,9 +52,8 @@ public class WebuniversityStepdefinitions {
     public void popup_ta_cikan_yazinin_oldugunu_test_eder(String string) {
 
        String actualText = Driver.getDriver().switchTo().alert().getText();
-       String expectedText = "validation failed";
 
-       Assert.assertEquals(expectedText,actualText);
+        Assert.assertEquals(string,actualText);
 
 
     }
