@@ -18,7 +18,6 @@ Feature:
     Then aradigi urunun bulundugunu test eder
     And sayfayi kapatir
 
-
   Scenario: TC:03 Kullanici java icin sonuc bulamamalidir
     Given kullanici Testotomasyon sayfasina gider
     And java icin arama yapar
