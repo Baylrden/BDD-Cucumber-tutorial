@@ -1,6 +1,6 @@
 Feature: US1016 yeni kayit olusturulabilmeli
 
-  @wip
+
   Scenario: TC24 kullanici kayit olusturabilmeli
     Given kullanici "automationUrl" anasayfaya gider
     And user sign up linkine tiklar

@@ -2,6 +2,7 @@ Feature: US 10004 Kullanici gecerli bilgilerle login olabilmeli
 
 
 
+   @rapor
   Scenario: TC10 valid username and password
     Given kullanici "toUrl" anasayfaya gider
     Then account buttonuna basar
