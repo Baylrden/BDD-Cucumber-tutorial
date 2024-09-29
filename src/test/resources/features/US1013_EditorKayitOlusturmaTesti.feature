@@ -1,6 +1,5 @@
 Feature: US1013 kullanicilar toplu kayit olusturabilmeli
 
-  @wip
  Scenario: : TC21 kullanici verilen listeden kayit olusturabilmeli
    When kullanici "editorUrl" anasayfaya gider
     And 3 saniye bekler
